@@ -2,6 +2,7 @@
 name = "amanita"
 version = "0.1.0"
 edition = "2021"
+authors = ["Ladislav Sladecek <ladislav.sladecek@gmail.com"]
 
 [dependencies]
 amanita-lib = { path = "../amanita-lib" }
