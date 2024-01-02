@@ -6,6 +6,7 @@ authors = ["Ladislav Sladecek <ladislav.sladecek@gmail.com"]
 
 [dependencies]
 solana-program = "1.17.13"
+amanita-lib = { path = "../amanita-lib" }
 
 [lib]
 crate-type = ["cdylib", "lib"]

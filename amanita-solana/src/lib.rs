@@ -6,6 +6,8 @@ use solana_program::{
     msg,
 };
 
+use amanita_lib;
+
 // declare and export the program's entrypoint
 entrypoint!(process_instruction);
 

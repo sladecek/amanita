@@ -1,9 +1,9 @@
 [workspace]
 
 members = [
-#    "amanita-lib",
-#    "amanita",	
-#    "amanita-chrome",
+    "amanita-lib",
+    "amanita",	
+    "amanita-chrome",
     "amanita-solana"    
 ]
 
