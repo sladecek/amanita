@@ -2,3 +2,8 @@
 /**/target/
 *.rs.bk
 *~
+**/*.rs.bk
+amanita-chrome/bin/
+amanita-chrome/pkg/
+amanita-chrome/extension/js/wasm/wasm_mod_bg.wasm
+amanita-chrome/extension/js/wasm/wasm_mod.js
