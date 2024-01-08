@@ -1,12 +1,10 @@
 mod utils;
 
 use wasm_bindgen::prelude::*;
+use gloo_console as console;
+use rand_core::{RngCore, OsRng};
+use amanita_lib::compact_test;
 
-// When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
-// allocator.
-#[cfg(feature="wee_alloc")]
-#[global_allocator]
-static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 #[wasm_bindgen]
 extern {
@@ -16,10 +14,11 @@ extern {
     fn log (s: &str);
 }
 
-// Will be called in content.js
+
 #[wasm_bindgen]
-pub fn hello_content () {
-    alert("Hello from the content script!");
+pub fn hello_content() {
+   let result = compact_test(OsRng);
+   console::info!("test finished {}", result);    
 }
 
 // Will be called in background.js
