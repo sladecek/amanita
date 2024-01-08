@@ -5,4 +5,6 @@ _default:
 
 # Build the web extension
 build:
-  cd amanita-chrome && wasm-pack build --release -t web
+  cd amanita-chrome \
+  && wasm-pack build --release -t web \
+  && cat  pkg/amanita_chrome.js foreground/index_part.js > pkg/index.js

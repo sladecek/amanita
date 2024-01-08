@@ -6,3 +6,4 @@ authors = ["Ladislav Sladecek <ladislav.sladecek@gmail.com"]
 
 [dependencies]
 amanita-lib = { path = "../amanita-lib" }
+rand_core = { version="0.6.4", features = ["getrandom"] }

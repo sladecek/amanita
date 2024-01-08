@@ -16,11 +16,11 @@
     },
     "content_scripts": [
       {
-        "js": ["foreground/index.js"],
+        "js": ["pkg/index.js"],
         "world": "MAIN",
         "run_at": "document_start",
         "matches": [
-          "file:///*"
+          "http://locahost:8000/"
         ]
       }
     ]

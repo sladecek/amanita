@@ -1,4 +1,5 @@
-use amanita_lib;
+use amanita_lib::compact_test;
+use rand_core::{RngCore, OsRng};
 
 fn main() {
     println!("Hello, world!");
@@ -11,6 +12,6 @@ mod tests {
 
     #[test]
     fn it_works() {
-        assert_eq!(4, 4);
+        assert!(compact_test(OsRng));
     }
 }

@@ -42,14 +42,18 @@ name = "amanita"
 version = "0.1.0"
 dependencies = [
  "amanita-lib",
+ "rand_core 0.6.4",
 ]
 
 [[package]]
 name = "amanita-chrome"
 version = "0.1.0"
 dependencies = [
+ "amanita-lib",
+ "getrandom 0.2.11",
  "gloo-console",
  "gloo-utils",
+ "rand_core 0.6.4",
  "wasm-bindgen",
  "web-extensions-sys",
  "web-sys",
